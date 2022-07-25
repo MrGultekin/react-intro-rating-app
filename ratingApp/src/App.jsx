@@ -1,10 +1,14 @@
 import './App.css'
+import Header from "./components/Header.jsx";
 
 function App() {
 	return (
-		<div className="App">
-			<h1>Testing</h1>
-		</div>
+		<>
+			<div className="container">
+				<Header />
+				<h1>My Rating App</h1>
+			</div>
+		</>
 	)
 }
 
