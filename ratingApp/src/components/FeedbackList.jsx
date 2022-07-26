@@ -8,7 +8,7 @@ const FeedbackList = ({feedback}) => {
 			</p>
 		)
 	}
-	return <div> List</div>
+	return <div> THIS is visible because feedback is Not Empty</div>
 
 }
 

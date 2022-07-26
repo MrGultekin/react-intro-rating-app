@@ -6,7 +6,7 @@ import FeedbackData from "./data/FeedbackData.js";
 import FeedbackList from "./components/FeedbackList.jsx";
 
 function App() {
-	const [feedback,setFeedback] =useState()
+	const [feedback,setFeedback] =useState(FeedbackData)
 	return (
 		<>
 			<div className="container">
