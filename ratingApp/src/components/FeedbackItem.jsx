@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+import FeedbackData from "../data/FeedbackData.js";
 
 const FeedbackItem = props => {
 	const [rating, setRating] = useState(7)
-	const [text, setText] = useState('Text from useState.')
+	const [text, setText] = useState()
 
 
 
