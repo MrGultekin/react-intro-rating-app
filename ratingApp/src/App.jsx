@@ -1,12 +1,13 @@
 import './App.css'
 import Header from "./components/Header.jsx";
+import FeedbackItem from "./components/FeedbackItem.jsx";
 
 function App() {
 	return (
 		<>
 			<div className="container">
-				<Header />
-				<h1>My Rating App</h1>
+				<Header/>
+				<FeedbackItem/>
 			</div>
 		</>
 	)
