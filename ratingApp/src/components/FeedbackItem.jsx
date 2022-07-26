@@ -2,10 +2,9 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import FeedbackData from "../data/FeedbackData.js";
 
-const FeedbackItem = props => {
+const FeedbackItem = () => {
 	const [rating, setRating] = useState(7)
-	const [text, setText] = useState()
-
+	const [text, setText] = useState('This is from FeedbackItem as default text state')
 
 
 	return (

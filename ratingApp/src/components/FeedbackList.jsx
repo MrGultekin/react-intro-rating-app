@@ -1,4 +1,5 @@
 import React from 'react';
+import FeedbackItem from "./FeedbackItem.jsx";
 
 const FeedbackList = ({feedback}) => {
 	if (!feedback || feedback.length === 0) {
@@ -8,7 +9,14 @@ const FeedbackList = ({feedback}) => {
 			</p>
 		)
 	}
-	return <div> THIS is visible because feedback is Not Empty</div>
+	return (
+			<div className={'feedback-list'}>
+				{feedback.map((item) =>(
+					<FeedbackItem key={item.id} item={item}/>
+				))}
+			</div>
+
+		)
 
 }
 
