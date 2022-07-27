@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({text,myTextColor,myBgColor}) => {
+const Header = ({text, myTextColor, myBgColor}) => {
 	const headerStyle = {
-		backgroundColor:myBgColor,
+		backgroundColor: myBgColor,
 		color: myTextColor,
 	}
 
@@ -24,7 +24,7 @@ Header.propTypes = {
 Header.defaultProps = {
 	text: 'FeedBack UI',
 	myBgColor: 'rgba(0,0,0,0.4)',
-	myTextColor:'#ff6a95'
+	myTextColor: '#ff6a95'
 }
 
 export default Header;
