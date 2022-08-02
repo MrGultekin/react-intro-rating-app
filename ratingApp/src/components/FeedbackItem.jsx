@@ -4,7 +4,7 @@ import Card from "../sharedUI/Card.jsx";
 const FeedbackItem = ({item}) => {
 
 	return (
-		<Card reverse={true}>
+		<Card reverse={false}>
 			<div className="num-display">{item.rating}</div>
 			<div className="text-display">{item.text}</div>
 		</Card>
