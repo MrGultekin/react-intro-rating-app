@@ -3,15 +3,14 @@ import PropTypes from "prop-types";
 // import {FaTimes} from "react-icons/all.js";
 import {FaTimes} from "react-icons/fa";
 
-const FeedbackItem = ({item}) => {
-	function handleClick(id) {
-		console.log(id)
-	}
-
+const FeedbackItem = ({item,handleDelete}) => {
+	// function handleClick(id) {
+	// 	console.log(id)
+	// }
 	return (
 		<Card>
 			<div className="num-display">{item.rating}</div>
-			<button className='close' onClick={()=> handleClick(item.id)}>
+			<button className='close' onClick={()=> handleDelete(item.id)}>
 				<FaTimes color={'purple'}/>
 			</button>
 			<div className="text-display">{item.text}</div>
